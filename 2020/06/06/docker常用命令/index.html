@@ -20,17 +20,18 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录各种零零散散的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="喜欢苦瓜的刺猬">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="docker常用命令">
+<meta property="og:url" content="http://yoursite.com/2020/06/06/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="喜欢苦瓜的刺猬">
-<meta property="og:description" content="记录各种零零散散的东西">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-06T10:01:28.000Z">
+<meta property="article:modified_time" content="2020-07-09T10:45:10.624Z">
 <meta property="article:author" content="喜欢苦瓜的刺猬">
+<meta property="article:tag" content="docker">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2020/06/06/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 
 
 <script id="page-configurations">
@@ -38,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 喜欢苦瓜的刺猬</title>
+  <title>docker常用命令 | 喜欢苦瓜的刺猬</title>
   
 
 
@@ -152,234 +153,194 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 15 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/06/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/bear_black.png">
+      <meta itemprop="name" content="喜欢苦瓜的刺猬">
+      <meta itemprop="description" content="记录各种零零散散的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="喜欢苦瓜的刺猬">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          docker常用命令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-06 18:01:28" itemprop="dateCreated datePublished" datetime="2020-06-06T18:01:28+08:00">2020-06-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-09 18:45:10" itemprop="dateModified" datetime="2020-07-09T18:45:10+08:00">2020-07-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%B9%E5%99%A8/" itemprop="url" rel="index"><span itemprop="name">容器</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
+        <!-- 摘要 -->
+<a id="more"></a>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:31:36+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/" itemprop="url">
-            <span itemprop="name">性能测试</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_R/" itemprop="url">
-            <span itemprop="name">七七八八_R</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/anaconda/" itemprop="url">
-            <span itemprop="name">anaconda</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_python/" itemprop="url">
-            <span itemprop="name">七七八八_python</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/numpy/" itemprop="url">
-            <span itemprop="name">numpy</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_java/" itemprop="url">
-            <span itemprop="name">七七八八_java</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-06-06T18:01:28+08:00"
-              content="2020-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/06/06/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">docker常用命令</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-06-06T13:27:08+08:00"
-              content="2020-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/06/06/vim/" itemprop="url">
-            <span itemprop="name">vim常用命令</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-16T17:10:08+08:00"
-              content="2020-05-16">
-          05-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/16/%E8%A5%BF%E8%AF%AD%E5%8D%95%E8%AF%8D%E6%9C%AC/" itemprop="url">
-            <span itemprop="name">西语单词本</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T10:37:55+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/09/mysql%E5%87%BD%E6%95%B0/" itemprop="url">
-            <span itemprop="name">mysql(5.7.23-log) - 函数</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">docker search python</td>
+<td align="left">找基础镜像</td>
+</tr>
+<tr>
+<td align="left">docker pull python:3.5.0</td>
+<td align="left">拉基础镜像和版本</td>
+</tr>
+<tr>
+<td align="left">docker save -o py35.tar python:3.5.0</td>
+<td align="left">保存基础镜像到本地</td>
+</tr>
+<tr>
+<td align="left">docker image rm image name/id</td>
+<td align="left">删除镜像</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">docker create –name mypython python:3.5.0</td>
+<td align="left">使用python:3.5.0镜像创建名为mypython的容器，但不启动</td>
+</tr>
+<tr>
+<td align="left">docker run –name mypython python:3.5.0</td>
+<td align="left">使用python:3.5.0镜像创建名为mypython的容器，并启动</td>
+</tr>
+<tr>
+<td align="left">docker start container_name/container_id</td>
+<td align="left">启动已经被停止的容器</td>
+</tr>
+<tr>
+<td align="left">docker stop container_name/container_id</td>
+<td align="left">停止一个运行中的容器</td>
+</tr>
+<tr>
+<td align="left">docker restart container_name/container_id</td>
+<td align="left">重启容器</td>
+</tr>
+<tr>
+<td align="left">docker kill container_name/container_id</td>
+<td align="left">强制停止一个运行中的容器</td>
+</tr>
+<tr>
+<td align="left">docker rm container_name/container_id</td>
+<td align="left">删除某个容器</td>
+</tr>
+<tr>
+<td align="left">docker rm ‘docker ps -a -q’</td>
+<td align="left">一次性删除所有容器</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">docker container ls -a 或 docker ps -a</td>
+<td align="left">查看所有容器，包括停掉的<br></td>
+</tr>
+<tr>
+<td align="left">docker ps -n=2</td>
+<td align="left">-n=x选项，查看最后创建x的个容器</td>
+</tr>
+<tr>
+<td align="left">docker ps -l</td>
+<td align="left">查看最新创建的容器</td>
+</tr>
+<tr>
+<td align="left">docker attach name/id</td>
+<td align="left">进入容器，退出时推出退出</td>
+</tr>
+<tr>
+<td align="left">docker exec -it name /bin/bash</td>
+<td align="left">进入容器，退出之后仍然在后台运行</td>
+</tr>
+<tr>
+<td align="left">docker cp mycontainer: /opt/testnew/file.txt /opt/test/</td>
+<td align="left">从容器拷贝文件到宿主机，例如将容器mycontainer从路径/opt/testnew/下的文件file.txtx拷贝到主机/opt/test路径下，在宿主机中执行命令</td>
+</tr>
+<tr>
+<td align="left">docker cp /opt/test/file.txt mycontainer: /opt/testnew</td>
+<td align="left">从宿主机拷贝文件到容器，例如将宿主机中路径/opt/test/下的文件file.txtx拷贝到容器mycontainer的/opt/testnew路径下，在宿主机中执行命令docker</td>
+</tr>
+</tbody></table>
+<h6 id="docker-ps"><a href="#docker-ps" class="headerlink" title="docker ps"></a>docker ps</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CONTAINER ID     IMAGE               COMMAND            CREATED       STATUS        PORTS                             NAMES</span><br><span class="line">672acb997ca3     automl:0.4          &quot;&#x2F;bin&#x2F;bash&quot;        2 days ago    Up 40 hours   10.116.191.141:6066-&gt;6066&#x2F;tcp     pre</span><br><span class="line">容器的唯一标识ID  创建容器时使用的镜像  容器最后运行的命令  创建容器的时间  容器状态       对外开放的端口                     容器名，可以和容器ID一样唯一标识容器，同一台宿主机上不允许有同名容器存在，否则会冲突</span><br></pre></td></tr></table></figure>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/docker/" rel="tag"># docker</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/06/vim/" rel="prev" title="vim常用命令">
+      <i class="fa fa-chevron-left"></i> vim常用命令
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_java/" rel="next" title="七七八八_java">
+      七七八八_java <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
+  
+  
 
 
 
@@ -431,6 +392,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#docker-ps"><span class="nav-number">1.</span> <span class="nav-text">docker ps</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

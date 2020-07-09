@@ -20,17 +20,18 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录各种零零散散的东西">
-<meta property="og:type" content="website">
-<meta property="og:title" content="喜欢苦瓜的刺猬">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="性能测试">
+<meta property="og:url" content="http://yoursite.com/2020/07/05/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/index.html">
 <meta property="og:site_name" content="喜欢苦瓜的刺猬">
-<meta property="og:description" content="记录各种零零散散的东西">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-05T03:31:36.000Z">
+<meta property="article:modified_time" content="2020-07-05T03:36:16.982Z">
 <meta property="article:author" content="喜欢苦瓜的刺猬">
+<meta property="article:tag" content="性能">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2020/07/05/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
 
 
 <script id="page-configurations">
@@ -38,12 +39,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 喜欢苦瓜的刺猬</title>
+  <title>性能测试 | 喜欢苦瓜的刺猬</title>
   
 
 
@@ -152,234 +153,92 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 15 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/05/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/bear_black.png">
+      <meta itemprop="name" content="喜欢苦瓜的刺猬">
+      <meta itemprop="description" content="记录各种零零散散的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="喜欢苦瓜的刺猬">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          性能测试
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-05 11:31:36 / 修改时间：11:36:16" itemprop="dateCreated datePublished" datetime="2020-07-05T11:31:36+08:00">2020-07-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+        <!-- 摘要 -->
+<a id="more"></a>
+
+<dl><dt>并发测试</dt><dd>用户增加</dd></dl><dl><dt>负载测试</dt><dd>网络流量、响应时间、CPU负载、内存负载</dd></dl><dl><dt>压力测试</dt><dd>用于确定系统瓶颈、隔段时间不断加用户，和负载测试的区别是要让系统崩溃</dd></dl><dl><dt>大数据量测试</dt><dd>测数据库读写性能</dd></dl><dl><dt>疲劳测试</dt><dd>通过负载和压力得到最大值后，就使用这个最大值进行长时间测试，一般是7*24小时</dd></dl><dl><dt>基准测试</dt><dd>找最优化的测试方案</dd></dl><dl><dt>可靠性测试</dt><dd>在规定条件下的时间内，不引起系统失效的概率，例如容灾测试</dd></dl>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:31:36+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%80%A7%E8%83%BD/" rel="tag"># 性能</a>
+          </div>
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/" itemprop="url">
-            <span itemprop="name">性能测试</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_R/" itemprop="url">
-            <span itemprop="name">七七八八_R</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/anaconda/" itemprop="url">
-            <span itemprop="name">anaconda</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_python/" itemprop="url">
-            <span itemprop="name">七七八八_python</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/numpy/" itemprop="url">
-            <span itemprop="name">numpy</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-07-05T11:25:48+08:00"
-              content="2020-07-05">
-          07-05
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_java/" itemprop="url">
-            <span itemprop="name">七七八八_java</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-06-06T18:01:28+08:00"
-              content="2020-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/06/06/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">
-            <span itemprop="name">docker常用命令</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-06-06T13:27:08+08:00"
-              content="2020-06-06">
-          06-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/06/06/vim/" itemprop="url">
-            <span itemprop="name">vim常用命令</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-16T17:10:08+08:00"
-              content="2020-05-16">
-          05-16
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/16/%E8%A5%BF%E8%AF%AD%E5%8D%95%E8%AF%8D%E6%9C%AC/" itemprop="url">
-            <span itemprop="name">西语单词本</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-09T10:37:55+08:00"
-              content="2020-05-09">
-          05-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/05/09/mysql%E5%87%BD%E6%95%B0/" itemprop="url">
-            <span itemprop="name">mysql(5.7.23-log) - 函数</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
+        
 
 
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/05/%E4%B8%83%E4%B8%83%E5%85%AB%E5%85%AB_R/" rel="prev" title="七七八八_R">
+      <i class="fa fa-chevron-left"></i> 七七八八_R
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-  </div>
+      </footer>
+    
+  </article>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
 
 
